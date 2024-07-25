@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Calculator</h2>
+    <div class="firstnum" style="margin-bottom: 10px;">
+        <label for="first">First number:</label>
+        <input type="text" id="first"> 
+   </div>
+   <div class="secondnum" style="margin-bottom: 10px;">
+        <label for="first">Second number:</label>
+        <input type="text" id="second">
+   </div>
+
+    <button id="btn" onclick="sum()"  style="margin-bottom: 10px;border: none; background-color: brown; color:beige; padding: 5px 20px;">Sum</button> 
+    <button id="btn" onclick="difference()"  style="margin-bottom: 10px;border: none; background-color: brown; color:beige; padding: 5px 20px;">Difference</button> 
+    <button id="btn" onclick="product()"  style="margin-bottom: 10px;border: none; background-color: brown; color:beige; padding: 5px 20px;">Product</button> 
+    <button id="btn" onclick="quotient()"  style="margin-bottom: 10px;border: none; background-color: brown; color:beige; padding: 5px 20px;">Quotient</button> 
+
+    <div id="result"></div>
+
+
+   
+
+   <script src="../js/calculator.js"></script>
+</body>
+</html>
