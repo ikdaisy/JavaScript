@@ -1,14 +1,18 @@
-let fact=1;
-let num= parseInt(document.getElementById("num").value)
-function findFactorial(){
-    for(i=1;i<=num;i++){
-        fact=fact*i;
+function find(){
+    let num=parseInt(document.getElementById("num").value)
 
-        setTimeout(()=>{
-            n*findFactorial(n-1)
-        },1000)
-    }
-  document.getElementById("result").innerHTML=fact;
+    setTimeout(() => {
+
+        document.getElementById("result").textContent=`The Factorial is ${fact(num)}`
+        
+    }, 0);
 }
 
-
+function fact(num){
+    if(num<=1){
+        return 1
+    }
+    else{
+        return num*fact(num-1)
+    }
+}
