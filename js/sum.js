@@ -3,5 +3,5 @@ function sum(){
     let b= parseInt(document.getElementById("second").value)
     document.getElementById("result").innerHTML=`Sum is ${a+b}`
 
-
 }
+

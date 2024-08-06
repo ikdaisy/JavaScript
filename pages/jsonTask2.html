@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .card{
+        width: 350px;
+        height: 300px;
+        border: 1px solid rgb(119, 119, 115);
+        margin: 10px ;
+        padding: 10px 10px;
+        text-align: center;
+        color: black;
+        border-radius: 10px;
+        /* background-color: rgb(20, 20, 88) ; */
+    }
+
+    .card:hover{
+        background-color: rgb(245, 245, 203);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .id{
+        font-size: 15px;
+        font-weight: bolder;
+       
+    
+    }
+
+    .title{
+        font-size: 15px;
+        font-weight: bolder;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+       
+
+    }
+    img{
+        width: 150px;
+        height: 200px;
+        margin-top: 20px;
+    }
+
+    button{
+            border: none;
+            color: white;
+            margin-top:10px ;
+            margin-bottom:10px ;
+            border-radius: 10px;
+            font-weight: bolder;
+            background-color: rgba(5, 58, 138, 0.733);
+            padding: 10px 15px;
+            box-shadow: rgba(8, 8, 8, 0.35) 0px 5px 15px;
+
+
+        }
+</style>
+</head>
+<body>
+
+    <button onclick="getData()">Get Data</button>
+    <div id="list">
+      
+
+
+    </div>
+    <script src="../js/jsonTask2.js"></script>
+</body>
+</html>
