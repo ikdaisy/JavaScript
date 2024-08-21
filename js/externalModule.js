@@ -41,3 +41,14 @@
     }
  }
 
+ export function passwordValidate(password){
+    console.log(password);
+    let regEx=/[a-z,A-Z,0-9,@,#,$,%,^.&.*]{8,15}/
+    if(regEx.test(password)){
+        return `<span class="smsg">Success</span>`
+    }
+    else{
+        return `<span class="emsg">Invalid</span>`
+    }
+ }
+
